@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export class LifeCycleComponent extends Component {
 
-    constructor(props){
+    constructor(props){   
         console.log("constructor")
         super(props)
         this.state= {
@@ -19,6 +19,7 @@ export class LifeCycleComponent extends Component {
     }
     shouldComponentUpdate(){
         console.log("Preveious state and props")
+        
         return true;
     }
     getSnapshotBeforeUpdate(prevProps,prevState){
