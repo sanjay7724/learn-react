@@ -7,7 +7,11 @@ import Aboutclass from './components/AboutClass'
 function App() {
 
   return (
-    <Aboutclass name="app component" work="parent component"/>
+    <>
+       <Aboutclass name="app component" work="parent component"/><br></br>
+       <About name="Sanjay" work="Batman"/> 
+    </>
+    
   )
 }
 
