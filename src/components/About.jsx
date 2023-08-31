@@ -10,13 +10,14 @@ function About(props) {
   function changeEvent(e){
     setName(e.target.value)
   }
+  
   return (
     <div>About:
       <b>Name: {props.name}</b><br></br>
       <b>Work: {props.work}</b><br></br>
-      <b>UserName: {name}</b>
+      <b>UserName: {name}</b><br></br>
       
-      <button onClick={()=>changeEvent(e)}>Click</button>
+      <button onClick={(e)=>changeEvent(e)}>Click</button><br></br>
     </div>
   )
 }
